@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+.header{
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(184, 178, 178, 0.1)), url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 602px;
+}
+
+.navigation {
+    opacity: 0.8;
+}
+
+.container div span a{
+    width: 210px;
+}
+
+/* Blue line styles */
+
+.contacts-row{
+    background: #2F80ED;
+}
+
+.line::after {
+   content: "";
+   width: 2px;
+   height: 70px;
+   background-color: white;
+   display: inline-block;
+   position: absolute;
+   left: 300px;
+   top: 30px;
+}
+
+.row .line:first-child::after {
+    top: -10px;
+}
+
+/* Categories section styles */
+
+.categories img:not(.star) {
+    width: 75px;
+    height: 75px;
+}
+
+.categories .line::after{
+    background-color: #2F80ED;
+    height: 130px;
+    left: 250px;
+}
+
+.categories .line:nth-child(2)::after{
+    top: -10px;
+}
+
+.category:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* infro section styles */
+
+.info {
+    background: #F6F6F6;
+}
+
+.info h3{
+    font-size: 18px;
+}
+
+.info p{
+    font-size: 14px;
+}
+
+.info button{
+    width: 75%;
+    height: 44px;
+}
+
+.info img{
+    height: 480px;
+}
